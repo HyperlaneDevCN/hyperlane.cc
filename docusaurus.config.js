@@ -24,8 +24,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "HyperlaneDevCN", // Usually your GitHub org/user name.
-  projectName: "website", // Usually your repo name.
-  deploymentBranch: "page",
+  projectName: "hyperlane.cc.github.io", // Usually your repo name.
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn", // 只显示警告但不会导致构建失败
@@ -390,6 +389,13 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
+      '@docusaurus/preset-classic',
+      {
+        gtag: {
+          trackingID: 'G-VCC88GDC2H',
+          anonymizeIP: false,
+        },
+      },
     ],
   ],
   stylesheets: [
@@ -454,7 +460,7 @@ const config = {
             position: 'left',
           }, 
           {
-            to: "https://linktr.ee/usehyperlane",
+            to: "https://linktr.ee/HyperlaneCC",
             position: "right",
             label: "⭐ Awesome",
           },
@@ -502,7 +508,11 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://x.com/hyperlane",
+                href: "https://x.com/hyperlaneCC",
+              },
+              {
+                label: "微信",
+                href: "https://x.com/hyperlaneCC",
               },
             ],
           },

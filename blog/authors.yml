@@ -18,8 +18,29 @@ HyperlaneCC:
 wangeguo:
   name: 国子
   title: Author of @AmphitheatreApp / Contributor of @Alux_Network / PMC of @OpenBuildxyz / Compiler Researcher of http://github.com/hummanta / Rustacean 🦀
-  url: https://hyperlane.cc
+  url: https://x.com/wangeguo
   image_url: https://pbs.twimg.com/profile_images/1756464684805550080/1q_bCFPG_400x400.jpg
   socials:
     x: https://x.com/wangeguo
     github: https://github.com/wangeguo
+
+hackvc:
+  name: Hack VC
+  title: Web3 知名投资机构，"基建狂魔"
+  url: https://www.hack.vc/
+  image_url: https://pbs.twimg.com/profile_images/1752106704731619328/Y7zvgEUq_400x400.jpg
+  socials:
+    x: https://x.com/hack_vc
+
+paultimofeev:
+  name: Paul Timofeev
+  image_url: https://cdn.prod.website-files.com/669871c478050139b74c8e08/67e184fbff1c8dd0cac0a2de_1_ubxUSSB3oyaV2IpGHw2nxQ.png
+
+yaco:
+  name: YaCo
+  title: PraxisGrove Founder / HyperlaneCC Builder
+  url: https://x.com/0xYaCo
+  image_url: https://pbs.twimg.com/profile_images/1848786082294599682/vMnBdz00_400x400.jpg
+  socials:
+    x: https://x.com/0xyaco
+    github: https://github.com/OS-Lihua
