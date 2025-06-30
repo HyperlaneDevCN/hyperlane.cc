@@ -14626,9 +14626,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hyperlane-v3-docs@workspace:.":
+"hyperlane.cc@workspace:.":
   version: 0.0.0-use.local
-  resolution: "hyperlane-v3-docs@workspace:."
+  resolution: "hyperlane.cc@workspace:."
   dependencies:
     "@cookbookdev/docsbot": "npm:^4.21.15"
     "@docusaurus/core": "npm:^3.8.1"
@@ -17334,9 +17334,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"my-loaders@file:plugins/my-loaders::locator=hyperlane-v3-docs%40workspace%3A.":
+"my-loaders@file:plugins/my-loaders::locator=hyperlane.cc%40workspace%3A.":
   version: 0.0.0
-  resolution: "my-loaders@file:plugins/my-loaders#plugins/my-loaders::hash=8226a8&locator=hyperlane-v3-docs%40workspace%3A."
+  resolution: "my-loaders@file:plugins/my-loaders#plugins/my-loaders::hash=8226a8&locator=hyperlane.cc%40workspace%3A."
   checksum: b442a230b330ce02c2afdf738a70fcc404bf9d5d61d131d3527375e33c9a1ea66adad56d46a6bccb59d57873d8c945d0f93c68829657ea1d6cb01028a4fb22d1
   languageName: node
   linkType: hard
