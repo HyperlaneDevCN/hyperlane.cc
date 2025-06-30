@@ -23,8 +23,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "HyperlaneDevCN", // Usually your GitHub org/user name.
-  projectName: "hyperlane.cc.github.io", // Usually your repo name.
+  // organizationName: "HyperlaneDevCN", // Usually your GitHub org/user name.
+  // projectName: "hyperlane.cc", // Usually your repo name.
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn", // 只显示警告但不会导致构建失败
