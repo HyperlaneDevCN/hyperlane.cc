@@ -19,7 +19,7 @@ TaoFi 是一个由 Hyperlane 驱动的创新项目，旨在通过让用户从他
 TaoFi 结合了 Hyperlane 的 **Warp Route** 和 **Interchain Account** 框架，以及 Sturdy 的 Subnet 10 优化，推出了一种全新的用户体验——通过一次交换即可访问 Bittensor。
 
 **TaoFi 的第一阶段现已上线：**
-
+<!-- truncate -->
 - 从 Ethereum 和 Base 桥接 USDC ⏩ [https://www.taofi.com/bridge](https://www.taofi.com/bridge)
 - 在 Bittensor EVM 上将 USDC 交换为 TAO ⏩ [https://www.taofi.com/swap](https://www.taofi.com/swap)
 - 为 USDC TAO 池提供流动性 ⏩ [https://www.taofi.com/pool](https://www.taofi.com/pool)

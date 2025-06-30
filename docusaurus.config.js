@@ -365,7 +365,8 @@ const config = {
     [
       "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      (
+        {
         blog: {
           blogTitle: 'Hyperlane 资讯',
           blogDescription: 'Hyperlane 最新资讯',
@@ -388,14 +389,11 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
-      '@docusaurus/preset-classic',
-      {
         gtag: {
           trackingID: 'G-VCC88GDC2H',
           anonymizeIP: false,
         },
-      },
+      }),
     ],
   ],
   stylesheets: [
