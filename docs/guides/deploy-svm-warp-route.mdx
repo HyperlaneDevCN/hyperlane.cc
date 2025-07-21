@@ -112,7 +112,7 @@
 
 2. 在您刚创建的目录中，创建一个名为 `token-config.json` 的配置文件。
 
-   根据 [TokenConfig](https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/a5afd20f3ae69ccb3289d845d44b99dbdcde2c62/rust/sealevel/client/src/warp_route.rs#L114) Rust 结构的 `serde_json` 序列化配置您的 Warp 路由参数。要为 `interchainGasPaymaster` 设置的值，可以在 [核心部署工件](#before-you-start) 中找到。
+   根据 [TokenConfig](https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/a5afd20f3ae69ccb3289d845d44b99dbdcde2c62/rust/sealevel/client/src/warp_route.rs#L114) Rust 结构的 `serde_json` 序列化配置您的 Warp 路由参数。要为 `interchainGasPaymaster` 设置的值，可以在 [核心部署工件](#开始之前) 中找到。
 
    下面的示例显示了一个测试网 **原生到合成 Warp 路由**，它将 SOL 从 Solana 转移并在 Eclipse 上铸造合成 SOL。您还可以查看 [此配置](https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/a5afd20f3ae69ccb3289d845d44b99dbdcde2c62/rust/sealevel/environments/mainnet3/warp-routes/eclipsesol/token-config.json) 的生产 SOL Warp 路由。
 

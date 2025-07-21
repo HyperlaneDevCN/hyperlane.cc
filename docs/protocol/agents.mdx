@@ -4,5 +4,5 @@ Hyperlane 协议将跨链消息传递的传输层与安全层解耦。要运行�
 
 这些代理是用 Rust 实现的，并作为 Docker 镜像和二进制文件分发。
 
-1. [中继器](./agents/relayer.mdx) 满足协议的消息传输需求。它们聚合链外安全元数据，以便于 [`IInterchainSecurityModule` 接口](../reference/ISM/specify-your-ISM) 并将消息传递给接收者。
+1. [中继器](./agents/relayer.mdx) 满足协议的消息传输需求。它们聚合链外安全元数据，以便于 [`IInterchainSecurityModule` 接口](../../reference/ISM/specify-your-ISM) 并将消息传递给接收者。
 1. [验证者](./agents/validators.mdx) 满足协议的安全需求，作为 [多重签名 ISM](./ISM/multisig-ISM.mdx) 或 [Hyperlane AVS](./economic-security/hyperlane-avs.mdx) 的一部分，通过对 [邮箱](./mailbox.mdx) 消息的有效性进行认证，并将其签名提供给中继器。

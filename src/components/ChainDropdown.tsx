@@ -1,6 +1,12 @@
 import { useAbacusWorksChainNames } from "../utils/registry";
-import { ProtocolType } from "@hyperlane-xyz/utils";
 import { chainMetadata } from "@hyperlane-xyz/registry";
+
+// 本地定义ProtocolType以避免依赖问题
+enum ProtocolType {
+  Ethereum = "ethereum",
+  Sealevel = "sealevel",
+  Cosmos = "cosmos",
+}
 
 type Props = {
   chains: string[];

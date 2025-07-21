@@ -20,12 +20,12 @@ import TabItem from "@theme/TabItem";
 
 本指南分为六个步骤：
 
-1. [<b>设置密钥</b>](#1-set-up-keys) 以便您可以部署合约并运行验证者和中继器。
-1. [<b>部署合约</b>](#2-deploy-contracts) 到本地链以及每个远程链，以便本地链能够发送和接收消息。
-1. [<b>运行验证者</b>](#3-run-a-validator) 以提供您部署的跨链安全模块所需的签名。
-1. [<b>运行中继器</b>](#4-run-a-relayer) 以在您部署合约的链之间发送和接收消息。
-1. [<b>发送测试消息</b>](#5-send-test-messages) 以确认您的中继器能够在每对链之间传递消息。
-1. [<b>部署 Warp 路由</b>](#6-optional-deploy-a-warp-route) 以便在链之间发送代币价值，而不仅仅是消息。
+1. [<b>设置密钥</b>](#1-设置密钥) 以便您可以部署合约并运行验证者和中继器。
+1. [<b>部署合约</b>](#2-部署合约) 到本地链以及每个远程链，以便本地链能够发送和接收消息。
+1. [<b>运行验证者</b>](#3-运行验证者) 以提供您部署的跨链安全模块所需的签名。
+1. [<b>运行中继器</b>](#4-运行中继器) 以在您部署合约的链之间发送和接收消息。
+1. [<b>发送测试消息</b>](#5-发送测试消息) 以确认您的中继器能够在每对链之间传递消息。
+1. [<b>部署 Warp 路由</b>](#6-可选部署-warp-路由) 以便在链之间发送代币价值，而不仅仅是消息。
 
 ## 开始
 
@@ -43,7 +43,7 @@ import TabItem from "@theme/TabItem";
 
 ### 设置目录
 
-首先，将 `CONFIG_FILES` 环境变量设置为在 [部署合约](#2-deploy-contracts) 步骤中生成的代理配置的路径。例如：
+首先，将 `CONFIG_FILES` 环境变量设置为在 [部署合约](#2-部署合约) 步骤中生成的代理配置的路径。例如：
 
 ```bash
 export CONFIG_FILES=/full/path/to/configs/agent-config-{timestamp}.json
@@ -263,7 +263,7 @@ cargo build --release --bin validator
 
 中继器传递在本地链和远程链之间发送的跨链消息。要了解中继器的作用，请[点击这里](docs/protocol/agents/relayer.mdx)。
 
-您应该已经将 `CONFIG_FILES` 环境变量设置为在 [代理配置](#agent-configs) 步骤中生成的代理配置的路径。如果没有，请现在设置。
+您应该已经将 `CONFIG_FILES` 环境变量设置为在 [部署合约](#2-部署合约) 步骤中生成的代理配置的路径。如果没有，请现在设置。
 
 ```bash
 export CONFIG_FILES=/full/path/to/configs/agent-config.json

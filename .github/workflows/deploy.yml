@@ -14,13 +14,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: yarn
+          cache: pnpm
 
       - name: Install dependencies
-        run: yarn install --no-immutable
+        run: pnpm install
 
       # 确保 CNAME 文件存在
       - name: Setup Custom Domain
@@ -31,7 +35,7 @@ jobs:
           fi
 
       - name: Build website
-        run: yarn build
+        run: pnpm build
 
       - name: Verify CNAME
         run: cat build/CNAME # 确认文件存在且内容正确

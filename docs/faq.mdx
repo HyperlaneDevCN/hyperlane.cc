@@ -31,7 +31,7 @@ Hyperlane的[消息接口](./protocol/mailbox.mdx)允许dapp开发者在不同�
 ### 消息传递
 
 **当我在Hyperlane上发送消息时会发生什么？**  
-有关更多详细信息，请参阅[发送](./reference/messaging/send.mdx)和[接收](./reference/messaging/receive.mdx)页面。总结如下：
+有关更多详细信息，请参阅[发送](../reference/messaging/send)和[接收](../reference/messaging/receive)页面。总结如下：
 
 1. 应用程序在源链上调用`dispatch()`函数，将消息插入到Mailbox的Merkle树中。
 2. Hyperlane中继器观察已发送的消息，并为接收者的跨链安全模块(ISM)组装元数据。
@@ -64,13 +64,13 @@ Hyperlane由其模块化安全堆栈保障，该堆栈具有跨链安全模块(I
 安全的模块化方法确保Hyperlane将继续跟上安全模型的最新行业进展。
 
 **Hyperlane有多少验证者，谁来运营它们？**  
-验证者的数量取决于跨链安全模块(ISM)配置。默认ISM使用特定的验证者集合，你可以在[这里](./reference/default-ism-validators)查看详细信息，如阈值、运营商和地址。
+验证者的数量取决于跨链安全模块(ISM)配置。默认ISM使用特定的验证者集合，你可以在[这里](../reference/default-ism-validators)查看详细信息，如阈值、运营商和地址。
 
 **我们如何确保消息完整性？**  
 Hyperlane的消息安全由跨链安全模块(ISM)配置驱动。默认情况下，消息依赖于默认ISM的验证者集合，该集合需要验证者的法定人数签名以确保安全。在验证者被入侵的不太可能的情况下，消息的安全性可能会受到影响。然而，开发者有灵活性配置自己的ISM，使他们能够自定义和加强安全模型以适应其应用程序的需求。
 
 **源链是否收到目标链上交易执行的确认？**  
-目前，源链不会自动收到来自目标链的执行确认。但是，可以通过自定义目标链上的`handle`函数来添加此功能。有关更多信息，请参阅[handle函数](./reference/messaging/receive#handle)。
+目前，源链不会自动收到来自目标链的执行确认。但是，可以通过自定义目标链上的`handle`函数来添加此功能。有关更多信息，请参阅[handle函数](../reference/messaging/receive#handle)。
 
 **为什么出站消息ID存储在Merkle树中？**  
 出站消息ID存储在Merkle树中以高效跟踪和验证消息。这种机制确保验证者可以准确检测并签署新创建的消息。

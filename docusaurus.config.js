@@ -28,6 +28,7 @@ const config = {
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn", // 只显示警告但不会导致构建失败
+  onBrokenAnchors: "warn", // 对断开的锚点也只显示警告
   trailingSlash: true, // 或 false，取决于您的偏好
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -367,33 +368,33 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       (
         {
-        blog: {
-          blogTitle: 'Hyperlane 资讯',
-          blogDescription: 'Hyperlane 最新资讯',
-          postsPerPage: 'ALL',
-          blogSidebarTitle: '最新资讯',
-          blogSidebarCount: 'ALL',
-          showReadingTime: true, // When set to false, the "x min read" won't be shown
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
-        },
-        docs: {
-          remarkPlugins: [
-            [codeImport, { removeRedundantIndentations: true }],
-            [remarkMath, {}],
-          ],
-          rehypePlugins: [[rehypeKatex, { strict: false }]],
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/HyperlaneDevCN/website/tree/master/",
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-        gtag: {
-          trackingID: 'G-VCC88GDC2H',
-          anonymizeIP: false,
-        },
-      }),
+          blog: {
+            blogTitle: 'Hyperlane 资讯',
+            blogDescription: 'Hyperlane 最新资讯',
+            postsPerPage: 'ALL',
+            blogSidebarTitle: '最新资讯',
+            blogSidebarCount: 'ALL',
+            showReadingTime: true, // When set to false, the "x min read" won't be shown
+            readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+              defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+          },
+          docs: {
+            remarkPlugins: [
+              [codeImport, { removeRedundantIndentations: true }],
+              [remarkMath, {}],
+            ],
+            rehypePlugins: [[rehypeKatex, { strict: false }]],
+            sidebarPath: require.resolve("./sidebars.js"),
+            editUrl: "https://github.com/HyperlaneDevCN/website/tree/master/",
+          },
+          theme: {
+            customCss: require.resolve("./src/css/custom.css"),
+          },
+          gtag: {
+            trackingID: 'G-VCC88GDC2H',
+            anonymizeIP: false,
+          },
+        }),
     ],
   ],
   stylesheets: [
@@ -453,10 +454,10 @@ const config = {
           //   label: "⚙️  代理操作",
           // },
           {
-            to: 'blog', 
-            label: '资讯', 
+            to: 'blog',
+            label: '资讯',
             position: 'left',
-          }, 
+          },
           {
             to: "https://linktr.ee/HyperlaneCC",
             position: "right",
